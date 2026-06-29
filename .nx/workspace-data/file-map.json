@@ -1,0 +1,182 @@
+{
+  "version": "6.0",
+  "nxVersion": "23.0.1",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "package.json",
+        "hash": "864793300617221532"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16671395500909390281"
+      },
+      {
+        "file": ".idea/.gitignore",
+        "hash": "18109907959344192685"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13417776046909105611"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "3385014866466956207"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "14600148892634157659"
+      },
+      {
+        "file": ".idea/dummy-store-front.iml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10664273371610505208"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "5407418692668764289"
+      },
+      {
+        "file": "README.md",
+        "hash": "12152599121174841325"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "9002143704707986394"
+      }
+    ],
+    "projectFileMap": {
+      "web-e2e": [
+        {
+          "file": "apps/web-e2e/eslint.config.mjs",
+          "hash": "11747643397756768678"
+        },
+        {
+          "file": "apps/web-e2e/playwright.config.mts",
+          "hash": "17070858890975216657"
+        },
+        {
+          "file": "apps/web-e2e/project.json",
+          "hash": "195708423912131173"
+        },
+        {
+          "file": "apps/web-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625"
+        },
+        {
+          "file": "apps/web-e2e/tsconfig.json",
+          "hash": "10781023582241775611"
+        }
+      ],
+      "web": [
+        {
+          "file": "apps/web/eslint.config.mjs",
+          "hash": "10430629524713852104"
+        },
+        {
+          "file": "apps/web/project.json",
+          "hash": "16882937259195327415"
+        },
+        {
+          "file": "apps/web/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/web/src/app/app.config.server.ts",
+          "hash": "8147531562011437466"
+        },
+        {
+          "file": "apps/web/src/app/app.config.ts",
+          "hash": "16866531294490059319"
+        },
+        {
+          "file": "apps/web/src/app/app.html",
+          "hash": "11987652264972370457"
+        },
+        {
+          "file": "apps/web/src/app/app.routes.server.ts",
+          "hash": "4507635750745431950"
+        },
+        {
+          "file": "apps/web/src/app/app.routes.ts",
+          "hash": "6185150965714414910"
+        },
+        {
+          "file": "apps/web/src/app/app.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/src/app/app.spec.ts",
+          "hash": "13169002718664369942"
+        },
+        {
+          "file": "apps/web/src/app/app.ts",
+          "hash": "8927794897626277630"
+        },
+        {
+          "file": "apps/web/src/app/nx-welcome.ts",
+          "hash": "11667944468236656963"
+        },
+        {
+          "file": "apps/web/src/index.html",
+          "hash": "16521953136745093083"
+        },
+        {
+          "file": "apps/web/src/main.server.ts",
+          "hash": "10414218126444882581"
+        },
+        {
+          "file": "apps/web/src/main.ts",
+          "hash": "3820470197416434450"
+        },
+        {
+          "file": "apps/web/src/server.ts",
+          "hash": "17002160197565189515"
+        },
+        {
+          "file": "apps/web/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/web/tsconfig.app.json",
+          "hash": "18240981772752094364"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "16004134237605501702"
+        },
+        {
+          "file": "apps/web/tsconfig.spec.json",
+          "hash": "17489296883266577896"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "3244421341483603138"
+}
