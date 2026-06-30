@@ -1,0 +1,41 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #111827;
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.cart-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 20px;
+  padding: 0 6px;
+  margin-left: 6px;
+  border-radius: 999px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+}

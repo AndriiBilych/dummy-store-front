@@ -1,0 +1,55 @@
+<section class="checkout container">
+  @if (placed()) {
+    <div class="success">
+      <h1>Order placed! 🎉</h1>
+      <p>Thank you for your (pretend) purchase.</p>
+      <a class="btn" routerLink="/">Continue shopping</a>
+    </div>
+  } @else if (cart.items().length === 0) {
+    <h1>Checkout</h1>
+    <p class="empty">
+      Your cart is empty. <a routerLink="/">Browse products</a>
+    </p>
+  } @else {
+    <h1>Checkout</h1>
+    <div class="layout">
+      <form class="form" #checkoutForm="ngForm" (ngSubmit)="placeOrder()">
+        <label>
+          Full name
+          <input name="name" [(ngModel)]="form.name" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" [(ngModel)]="form.email" required />
+        </label>
+        <label>
+          Shipping address
+          <input name="address" [(ngModel)]="form.address" required />
+        </label>
+        <label>
+          Card number
+          <input name="card" [(ngModel)]="form.card" required />
+        </label>
+        <button type="submit" [disabled]="checkoutForm.invalid">
+          Place order — {{ cart.total() | currency }}
+        </button>
+      </form>
+
+      <aside class="summary">
+        <h2>Order summary</h2>
+        <ul>
+          @for (item of cart.items(); track item.product.id) {
+            <li>
+              <span>{{ item.product.title }} × {{ item.quantity }}</span>
+              <span>{{ item.product.price * item.quantity | currency }}</span>
+            </li>
+          }
+        </ul>
+        <div class="summary-total">
+          <span>Total</span>
+          <span>{{ cart.total() | currency }}</span>
+        </div>
+      </aside>
+    </div>
+  }
+</section>

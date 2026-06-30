@@ -1,0 +1,25 @@
+<section class="products container">
+  <h1>Products</h1>
+
+  @if (loading()) {
+    <p class="status">Loading products…</p>
+  } @else if (error()) {
+    <p class="status error">Failed to load products. Please try again later.</p>
+  } @else {
+    <div class="grid">
+      @for (product of products(); track product.id) {
+        <article class="card">
+          <img class="thumb" [src]="product.thumbnail" [alt]="product.title" />
+          <div class="body">
+            <span class="category">{{ product.category }}</span>
+            <h2 class="title">{{ product.title }}</h2>
+            <p class="price">{{ product.price | currency }}</p>
+            <button type="button" (click)="cart.add(product)">
+              Add to cart
+            </button>
+          </div>
+        </article>
+      }
+    </div>
+  }
+</section>

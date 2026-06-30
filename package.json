@@ -2,7 +2,9 @@
   "name": "@dummy-store-front/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve web"
+  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~21.2.0",
